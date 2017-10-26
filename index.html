@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>formularz zadanie</title>
 </head>
+
 <body>
-    <p></p>
+    <form action="https://formspree.io/sdarek19@gmail.com" method="post">
+    
+    <label for="name">Imię:</label>
+    <input type="text" name="name" id="name"><br>
+    
+    <label for="sname">Nazwisko:</label>
+    <input type="text" name="nazwisko" id="sname"><br>
+    
+    <label for="mail">E-mail:</label>
+    <input type="email" name="_replyto" id="mail"><br>
+    
+    <label for="telefon">Telefon:</label>
+    <input type="tel" name="phone" id="telefon"><br>
+    
+    <label for="miasto">Miasto:</label>
+    <select name="miasta" id="miasto">
+           <option value="">Zakopane</option>
+           <option value="">Krynica</option>
+           <option value="">Sandomierz</option>
+           <option value="">Kazimierz Dolny</option>
+       </select><br>
+       
+    <label>Płeć:</label><br>
+    <input type="radio" name="gender" value="male">Mężczyzna<br>
+    <input type="radio" name="gender" value="female">Kobieta<br>
+    <input type="radio" name="gender" value="other">Inne<br>
+    
+    <label for="zgoda-dane">Zgoda:</label><br>
+    <input type="checkbox" name="zgoda" id="zgoda-dane">Wyrażam zgodę na przetwarzanie danych osobowych<br>
+    
+    <textarea name="message" placeholder="Wpisz swoją wiadomość"></textarea><br>
+    <input type="submit" value="wyślij wiadomość">
+    </form>
+    
 </body>
+
 </html>
